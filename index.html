@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>j0nua's site</title>
-    <!-- Premium clean font -->
     <link href="https://googleapis.com" rel="stylesheet">
     <style>
         body {
-            background-color: #ffffff; /* Clean white */
-            color: #111111;           /* Sharp black */
+            background-color: #ffffff;
+            color: #111111;
             font-family: 'Inter', sans-serif;
             margin: 0;
             display: flex;
@@ -20,9 +19,19 @@
         }
 
         .content {
-            text-align: left; /* Alignment to the left looks "cleaner" and more modern */
+            text-align: left;
             max-width: 300px;
             width: 100%;
+        }
+
+        /* The new Image styling */
+        .profile-img {
+            width: 60px;      /* Adjust size here */
+            height: 60px;
+            border-radius: 50%; /* Makes it circular */
+            margin-bottom: 20px;
+            object-fit: cover;
+            display: block;
         }
 
         h1 {
@@ -55,11 +64,8 @@
             font-weight: 300;
         }
 
-        .link:hover {
-            opacity: 0.5; /* Simple fade instead of a box change */
-        }
+        .link:hover { opacity: 0.5; }
 
-        /* Small dot separator for a design touch */
         .link::before {
             content: "—";
             margin-right: 10px;
@@ -70,11 +76,14 @@
 <body>
 
     <div class="content">
+        <!-- Replace 'your-image.jpg' with your actual filename -->
+        <img src="your-image.jpg" alt="me" class="profile-img">
+
         <h1>j0nua</h1>
         <p>animator</p>
 
         <nav>
-            <a href="https://www.youtube.com/@mango_toot" class="link">YouTube</a>
+            <a href="https://www.youtube.com/@mango_toot" class="link">my youtube!!</a>
         </nav>
     </div>
 
